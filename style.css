@@ -1,39 +1,50 @@
 * {
     box-sizing: border-box;
 }
-
 @font-face {
     font-family: VTF MisterPixel;;
     src: url("Fonts/Mister\ Pixel\ Regular.otf") format("opentype");
 }
-
+section {
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    
+    border: 2px solid #FFD770;
+    box-sizing: border-box;
+}
+main{
+    display: flex;
+    justify-content: center;
+    padding: 32px;
+}
 body {
-background: #124D49;
-background-image: url(images/pattern.png);
-background-size: cover;
+    background: #124D49;
 }
-
+.background {
+    background: #124D49;
+    background-image: url(images/pattern.png);
+    background-size: cover;
+}
 h1 {
+    position: relative;
+    width: 100%;
+    height: 90px;
+    top: 342px;
+    -webkit-text-stroke: 1px #FFD770;
 
-position: relative;
-width: 100%;
-height: 90px;
-top: 342px;
--webkit-text-stroke: 1px #FFD770;
+    font-family: VTF MisterPixel;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 90px;
+    line-height: 90px;
 
-font-family: VTF MisterPixel;
-font-style: normal;
-font-weight: normal;
-font-size: 90px;
-line-height: 90px;
+    text-align: center;
 
-text-align: center;
+    color: #124D49;
 
-color: #124D49;
-
-text-shadow: 4px 4px 0px #FFD770;
+    text-shadow: 4px 4px 0px #FFD770;
 }
-
 button {
     position: relative;
     width: 448px;
@@ -42,27 +53,23 @@ button {
     
     background: #124D49;
     
-    border: 1px solid #FFD770;
+    border: 2px solid #FFD770;
     
     box-shadow: 4px 4px 0px #FFD770;
     font-family: VTF MisterPixel;
-font-style: normal;
-font-weight: normal;
-font-size: 33px;
-line-height: 33px;
-/* identical to box height */
+    font-style: normal;
+    font-weight: normal;
+    font-size: 33px;
+    line-height: 33px;
 
-text-align: center;
+    text-align: center;
 
-/* color 2 */
-
-color: #FFD770;
+    color: #FFD770;
 }
-
 .center{
-        display: block; 
-        margin-left: auto;
-        margin-right: auto;
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
 }
 button:hover {
     position: relative;
@@ -72,19 +79,217 @@ button:hover {
     
     background: #FFD770;
     
-    border: 1px solid #FFD770;
+    border: 2px solid  #124D49;
     
     box-shadow: 4px 4px 0px #FFD770;
+
     font-family: VTF MisterPixel;
-font-style: normal;
-font-weight: normal;
-font-size: 33px;
-line-height: 33px;
-/* identical to box height */
+    font-style: normal;
+    font-weight: normal;
+    font-size: 33px;
+    line-height: 33px;
 
-text-align: center;
+    -ms-transform: scale(0.9); 
+    -webkit-transform: scale(0.9); 
+    transform: scale(0.9); 
 
-/* color 2 */
+    text-align: center;
 
-color: #124D49;
+    color: #124D49;
+}
+a {
+    text-decoration: none;
+    color: #FFD770;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 90%;
+    margin: 72px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    color: #FFD770;
+}
+li{
+    float: right;
+}
+li a{
+    display: inline;
+    list-style-type: none;
+    text-decoration: none;
+    float: right;
+    margin: 8px;
+    color: #124D49;
+
+    background-color: #FFD770;
+
+    padding: 8px 30px;
+    
+    border: 2px solid #124D49;
+    
+    box-shadow: 4px 4px 0px #FFD770;
+
+    font-family: VTF MisterPixel;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    text-align: center;
+
+}
+li a:hover:not(.active) {
+    background-color:#124D49;
+    color:#FFD770;
+    border: 2px solid #FFD770;
+    animation-name: hovering;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+.symbols {
+    font-family: VTF MisterPixel;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 42px;
+    line-height: 42px;
+    color: #FFD770;
+}
+@keyframes hovering{
+    0%   {background-color: #FFD770;
+    color:#124D49;} 
+    100% {background-color: #124D49;
+    color: #FFD770;}
+
+}
+.container{
+    position: relative;
+
+    height: 224px;
+    margin-left: 90px;
+    margin-right: 0%;
+    top:120px;
+
+    border: 4px solid #FFD770;
+    box-sizing: border-box;
+
+    box-shadow: 4px 4px 0px #FFD770;
+}
+p{
+    margin: 24px;
+    font-family: VT323;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFD770;
+}
+.box{
+    position: relative;
+    display: inline;
+    padding: 8px 16px;
+    margin-right: 4px;
+    margin-left: 24px;
+    border: 1px solid #FFD770;
+    top: 24px;
+}
+.container2{
+    position: relative;
+    height: 224px;
+
+    background: #124D49;
+    background-image: url(images/boy.png);
+
+    margin-right: 90px;
+    margin-left: 0%;
+    top:120px;
+    border: 2px solid #FFD770;
+    box-sizing: border-box;
+
+    box-shadow: 4px 4px 0px #FFD770;
+  
+}
+.container3{
+    position: relative;
+    height: 224px;
+
+    background: #124D49;
+
+    margin-right: 90px;
+    margin-left: 0%;
+    top:120px;
+    border: 2px solid #FFD770;
+    box-sizing: border-box;
+
+    box-shadow: 4px 4px 0px #FFD770;
+  
+}
+.wrapper{
+    display:grid;
+    grid-template-columns: 80% 20%;
+    grid-gap: 16px;
+}
+.wrapperimage{
+    width: 100vh;
+    height: 312px;
+    top: 10%;
+    display: grid;
+    position: relative;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-gap: 48px;
+}
+h2{
+    font-family: VTF MisterPixel;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 33px;
+    line-height: 33px;
+    margin: 24px;
+    color: #FFD770;
+}
+span{
+    margin: 24px;
+    display: block;
+    font-family: VTF MisterPixel;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+    color: #FFD770;
+}
+.photo{
+    position: flex;
+    width: 680px;
+    height: 312px;
+    top: 2px;
+    justify-content: center;
+}
+.right{
+    position: absolute;
+    width: 99.41px;
+    height: 80.81px;
+    margin: 90px;
+    left: 81%;
+    top: 429px;
+}
+.right:hover {
+    -ms-transform: scale(0.9); 
+    -webkit-transform: scale(0.9); 
+    transform: scale(0.9); 
+}
+.left{
+    position: absolute;
+    width: 99.41px;
+    height: 80.81px;
+    margin: 90px;
+    right: 81%;
+    top: 429px;
+}
+.left:hover{
+    -ms-transform: scale(0.9); 
+    -webkit-transform: scale(0.9); 
+    transform: scale(0.9); 
 }
