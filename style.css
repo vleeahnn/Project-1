@@ -102,7 +102,7 @@ a {
     color: #FFD770;
 }
 nav{
-    display: flex;
+    display: fixed;
     justify-content: center;
     position: relative;
     width: 90%;
@@ -292,4 +292,66 @@ span{
     -ms-transform: scale(0.9); 
     -webkit-transform: scale(0.9); 
     transform: scale(0.9); 
+}
+#history{
+display: block;
+margin-left: 264px;
+margin-right: 264px;
+margin-bottom: 24px;
+margin-top:72px;
+font-family: VTF MisterPixel;
+font-style: normal;
+font-weight: normal;
+font-size: 33px;
+line-height: 33px;
+/* identical to box height */
+
+
+/* color 2 */
+
+color: #FFD770;
+}
+#phistory{
+    position:block;
+    margin-left: 264px;
+    margin-right: 264px;
+    margin-bottom: 24px;
+    font-family: VT323;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    
+    color: #FFD770;
+}
+.container4{
+    display: block;
+    position: absolute;
+    margin: auto;
+    width: 65%;
+    height: 72px;
+    top: 800px;
+    
+    background: #124D49;
+    
+    border: 2px solid #FFD770;
+    box-sizing: border-box;
+}
+h3{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-family: VTF MisterPixel;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 33px;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    animation-name: move;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+
+    color: #FFD770;
 }
