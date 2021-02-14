@@ -158,6 +158,11 @@ li a:hover:not(.active) {
     line-height: 42px;
     color: #FFD770;
 }
+.symbols:hover{
+    -ms-transform: scale(0.9); 
+    -webkit-transform: scale(0.9); 
+    transform: scale(0.9); 
+}
 @keyframes hovering{
     0%   {background-color: #FFD770;
     color:#124D49;} 
@@ -304,11 +309,6 @@ font-style: normal;
 font-weight: normal;
 font-size: 33px;
 line-height: 33px;
-/* identical to box height */
-
-
-/* color 2 */
-
 color: #FFD770;
 }
 #phistory{
@@ -355,3 +355,4 @@ h3{
 
     color: #FFD770;
 }
+
